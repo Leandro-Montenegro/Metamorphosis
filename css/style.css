@@ -1,0 +1,256 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    padding: 1px;
+    border-radius: 40px;
+}
+
+.search-text {
+    color: black;
+    font-size: 20px;
+    float: left;
+    line-height: 40px;
+}
+
+body {
+    background-image: url(../image/tormenta.jpg.png);
+    background-repeat: repeat;
+    height: 1500px;
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+}
+
+h1 {
+    color: black;
+    background-color: goldenrod;
+    font-style: oblique;
+}
+
+header nav {
+    font-style: italic;
+    max-width: 900px;
+    margin: auto;
+    background-color: silver;
+    font-size: 20px;
+    margin-top: 50px;
+
+}
+
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-horizontal>li:hover {
+    background-color: firebrick;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: black;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: indigo;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+}
+
+.intro {
+    background-color: silver;
+    text-align: center;
+    font-style: oblique;
+}
+
+main {
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 10px;
+}
+
+main p {
+    background-color: silver;
+}
+
+h2 {
+    font-size: 50px;
+    color: black;
+    margin-top: 10%;
+    font-style: oblique;
+    background-color: goldenrod;
+}
+
+.button {
+    background-color: indigo;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: red;
+    color: white;
+}
+
+h3 {
+    color: black;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: firebrick;
+}
+
+h4 {
+    color: black
+}
+
+h5 {
+    color: white;
+}
+
+.form {
+    background-color: silver;
+    color: black;
+    box-shadow: 7px 13px 37px black;
+}
+
+.control {
+    background-color: white;
+    padding: 10;
+    font-size: 18px;
+    border: 1px solid;
+    margin-bottom: 16px;
+}
+
+.form p {
+    height: 40px;
+    text-align: center;
+    font-size: 18;
+    line-height: 40px;
+}
+
+.form a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form .boton {
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    background: rgb(218, 81, 12);
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    margin: 0%;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: -1px 1px 7px 0px black;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+.products {
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    gap: 10px;
+}
+
+.info-product {
+    margin-bottom: 10%;
+    border-radius: 5px;
+    color: black;
+
+}
+
+.title-product {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.price-product {
+    background-color: goldenrod;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.image-product {
+    border-radius: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0px;
+}
+
+.imagen {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (min-width: 350px) {
+    .grid-container {
+        display: grid;
+        width: 100%;
+        margin: 0%;
+        grid-template-columns: 1fr 1fr;
+        box-shadow: -1px 1px 7px 0px black;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    body {
+        display: grid;
+        width: 100%;
+        margin: 0%;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .flex-container div{
+        width: 100%;
+    }
+}
