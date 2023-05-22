@@ -231,7 +231,7 @@ h5 {
     .grid-container {
         display: grid;
         width: 100%;
-        margin: 0%;
+        margin: 0;
         font-size: 40px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
