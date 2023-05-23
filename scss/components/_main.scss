@@ -2,7 +2,7 @@ main {
     p {
         background-color: silver;
     }
-    main .h2 {
+    h2 {
         font-size: 50px;
         color: black;
         margin-top: 10%;
@@ -12,8 +12,7 @@ main {
     }
     
 
-    .div {
-        .grid-container {
+    .grid-container {
             display: grid;
             width: 100%;
             margin: 0%;
@@ -38,6 +37,17 @@ main {
                     margin-bottom: 10%;
                     border-radius: 5px;
                     color: black;
+                    .button {
+                        background-color: indigo;
+                        color: black;
+                        padding: 10px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: red;
+                            color: white;
+                        }
+                    }
                 }
         
                 .title-product {
@@ -60,7 +70,6 @@ main {
                 }
             }
         }
-
 
     .form {
         background-color: silver;
@@ -88,19 +97,6 @@ main {
             }
         }
 
-        .button {
-            background-color: indigo;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-
-            :hover {
-                background-color: red;
-                color: white;
-            }
-        }
-
         .control {
             background-color: white;
             padding: 10;
@@ -125,4 +121,3 @@ main {
     .h5 {
         color: white;
     }
-}

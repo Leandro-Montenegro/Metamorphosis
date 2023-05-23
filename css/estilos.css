@@ -57,7 +57,7 @@ body {
 main p {
   background-color: silver; }
 
-main main .h2 {
+main h2 {
   font-size: 50px;
   color: black;
   margin-top: 10%;
@@ -65,7 +65,7 @@ main main .h2 {
   background-color: goldenrod;
   width: 100%; }
 
-main .div .grid-container {
+main .grid-container {
   display: grid;
   width: 100%;
   margin: 0%;
@@ -74,75 +74,75 @@ main .div .grid-container {
   box-shadow: -1px 1px 7px 0px black;
   font-size: 40px;
   grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
-  main .div .grid-container .products {
+  main .grid-container .products {
     box-shadow: -1px 1px 7px 0px black;
     padding: 10px;
     text-align: center;
     gap: 10px; }
-  main .div .grid-container .info-product {
+  main .grid-container .info-product {
     margin-bottom: 10%;
     border-radius: 5px;
     color: black; }
-  main .div .grid-container .title-product {
+    main .grid-container .info-product .button {
+      background-color: indigo;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none; }
+      main .grid-container .info-product .button:hover {
+        background-color: red;
+        color: white; }
+  main .grid-container .title-product {
     background-color: aliceblue;
     border-radius: 5px; }
-  main .div .grid-container .price-product {
+  main .grid-container .price-product {
     background-color: goldenrod;
     border-radius: 5px;
     padding: 5px;
     text-decoration: none; }
-  main .div .grid-container .image-product {
+  main .grid-container .image-product {
     border-radius: 30px;
     width: 300px;
     height: 400px;
     margin-bottom: 0px; }
 
-main .form {
+.form {
   background-color: silver;
   color: black;
   box-shadow: 7px 13px 37px black; }
-  main .form p {
+  .form p {
     height: 40px;
     text-align: center;
     font-size: 18;
     line-height: 40px; }
-    main .form p a:hover {
+    .form p a:hover {
       color: white;
       text-decoration: underline; }
-    main .form p .boton {
+    .form p .boton {
       border: none;
       padding: 12px;
       color: white;
       margin: 16px 0;
       font-size: 16px;
       background: #da510c; }
-  main .form .button {
-    background-color: indigo;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none; }
-    main .form .button :hover {
-      background-color: red;
-      color: white; }
-  main .form .control {
+  .form .control {
     background-color: white;
     padding: 10;
     font-size: 18px;
     border: 1px solid;
     margin-bottom: 16px; }
 
-main .h3 {
+.h3 {
   color: black;
   font-size: 22px;
   margin-top: 25px;
   margin-bottom: 25px;
   background-color: firebrick; }
 
-main .h4 {
+.h4 {
   color: black; }
 
-main .h5 {
+.h5 {
   color: white; }
 
 footer {
@@ -182,10 +182,11 @@ header h1 {
   border-radius: 4px; }
 
 header nav {
-  font-style: italic;
-  margin: auto;
-  font-size: 20px;
-  margin-top: 50px; }
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
   header nav .search {
     display: flex;
     justify-content: space-around;
@@ -203,26 +204,25 @@ header nav {
     display: flex;
     justify-content: space-around;
     background-color: silver; }
+    header nav .menu-horizontal li a {
+      display: block;
+      padding: 15px 20px;
+      color: black;
+      text-decoration: none; }
     header nav .menu-horizontal li:hover {
-      background-color: firebrick;
-      display: block; }
-      header nav .menu-horizontal li:hover a {
+      background-color: firebrick; }
+    header nav .menu-horizontal .menu-vertical {
+      position: absolute;
+      display: none;
+      list-style: none;
+      width: 300px;
+      background-color: black; }
+      header nav .menu-horizontal .menu-vertical li:hover {
+        background-color: indigo; }
+      header nav .menu-horizontal .menu-vertical li a {
         display: block;
-        padding: 15px 20px;
-        color: black;
-        text-decoration: none; }
-      header nav .menu-horizontal li:hover .menu-vertical {
-        position: absolute;
-        display: none;
-        list-style: none;
-        width: 300px;
-        background-color: black; }
-        header nav .menu-horizontal li:hover .menu-vertical li:hover {
-          background-color: indigo; }
-          header nav .menu-horizontal li:hover .menu-vertical li:hover a {
-            display: block;
-            color: white;
-            padding: 15px 15px 15px 20px; }
+        color: white;
+        padding: 15px 15px 15px 20px; }
 
 header .intro {
   background-color: silver;
