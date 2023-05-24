@@ -1,6 +1,6 @@
 main {
     p {
-        background-color: silver;
+        background-color: nth($background-color, 2);
     }
     h2 {
         font-size: 50px;
@@ -10,7 +10,15 @@ main {
         background-color: $color-h2;
         width: 100%;
     }
-    
+    section{
+        h3 {
+        color: black;
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background-color: $color-h3;
+        }
+    }
 
     .grid-container {
             display: grid;
@@ -19,7 +27,7 @@ main {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             box-shadow: -1px 1px 7px 0px black;
-            font-size: 40px;
+            font-size: 10px;
             grid-template-areas:
                 "header header"
                 "nav nav"
@@ -34,20 +42,11 @@ main {
                 }
         
                 .info-product {
+                    display: inline-block;
+                    width: 50%;
                     margin-bottom: 10%;
                     border-radius: 5px;
                     color: black;
-                    .button {
-                        background-color: indigo;
-                        color: black;
-                        padding: 10px;
-                        border-radius: 5px;
-                        text-decoration: none;
-                        &:hover {
-                            background-color: red;
-                            color: white;
-                        }
-                    }
                 }
         
                 .title-product {
@@ -57,8 +56,9 @@ main {
         
                 .price-product {
                     background-color: goldenrod;
+                    width: 100%;
                     border-radius: 5px;
-                    padding: 5px;
+                    padding: 10px;
                     text-decoration: none;
                 }
         
@@ -69,12 +69,12 @@ main {
                     margin-bottom: 0px;
                 }
             }
-        }
 
     .form {
         background-color: silver;
         color: black;
         box-shadow: 7px 13px 37px black;
+        
 
         p {
             height: 40px;
@@ -104,20 +104,25 @@ main {
             border: 1px solid;
             margin-bottom: 16px;
         }
+    
     }
 
-    .h3 {
-        color: black;
-        font-size: 22px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        background-color: firebrick;
-    }
-
-    .h4 {
+    h4 {
         color: black;
     }
 
-    .h5 {
+    h5 {
         color: white;
     }
+    .button {
+        background-color: indigo;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover {
+            background-color: red;
+            color: white;
+        }
+    }
+}

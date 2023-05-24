@@ -65,6 +65,13 @@ main h2 {
   background-color: goldenrod;
   width: 100%; }
 
+main section h3 {
+  color: black;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: firebrick; }
+
 main .grid-container {
   display: grid;
   width: 100%;
@@ -72,7 +79,7 @@ main .grid-container {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   box-shadow: -1px 1px 7px 0px black;
-  font-size: 40px;
+  font-size: 10px;
   grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
   main .grid-container .products {
     box-shadow: -1px 1px 7px 0px black;
@@ -80,25 +87,19 @@ main .grid-container {
     text-align: center;
     gap: 10px; }
   main .grid-container .info-product {
+    display: inline-block;
+    width: 50%;
     margin-bottom: 10%;
     border-radius: 5px;
     color: black; }
-    main .grid-container .info-product .button {
-      background-color: indigo;
-      color: black;
-      padding: 10px;
-      border-radius: 5px;
-      text-decoration: none; }
-      main .grid-container .info-product .button:hover {
-        background-color: red;
-        color: white; }
   main .grid-container .title-product {
     background-color: aliceblue;
     border-radius: 5px; }
   main .grid-container .price-product {
     background-color: goldenrod;
+    width: 100%;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none; }
   main .grid-container .image-product {
     border-radius: 30px;
@@ -106,44 +107,47 @@ main .grid-container {
     height: 400px;
     margin-bottom: 0px; }
 
-.form {
+main .form {
   background-color: silver;
   color: black;
   box-shadow: 7px 13px 37px black; }
-  .form p {
+  main .form p {
     height: 40px;
     text-align: center;
     font-size: 18;
     line-height: 40px; }
-    .form p a:hover {
+    main .form p a:hover {
       color: white;
       text-decoration: underline; }
-    .form p .boton {
+    main .form p .boton {
       border: none;
       padding: 12px;
       color: white;
       margin: 16px 0;
       font-size: 16px;
       background: #da510c; }
-  .form .control {
+  main .form .control {
     background-color: white;
     padding: 10;
     font-size: 18px;
     border: 1px solid;
     margin-bottom: 16px; }
 
-.h3 {
-  color: black;
-  font-size: 22px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  background-color: firebrick; }
-
-.h4 {
+main h4 {
   color: black; }
 
-.h5 {
+main h5 {
   color: white; }
+
+main .button {
+  background-color: indigo;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none; }
+  main .button:hover {
+    background-color: red;
+    color: white; }
 
 footer {
   background-color: #f9f9f9;
@@ -152,7 +156,8 @@ footer {
   footer .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    font-size: 10px; }
   footer .footer-column {
     flex: 1 1 300px;
     margin-bottom: 20px; }
@@ -182,7 +187,7 @@ header h1 {
   border-radius: 4px; }
 
 header nav {
-  display: flex;
+  display: block;
   justify-content: center;
   list-style: none;
   margin: 0;
@@ -192,7 +197,7 @@ header nav {
     justify-content: space-around;
     align-items: center;
     left: 50%;
-    padding: 1px;
+    padding: 15px;
     border-radius: 40px; }
   header nav .search-text {
     color: black;

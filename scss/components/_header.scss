@@ -1,14 +1,14 @@
 header {
     h1 {
-        color: black;
-        background-color: goldenrod;
+        color: nth($colores, 1);
+        background-color: nth($background-color, 3);
         font-style: oblique;
         box-shadow: -1px 1px 7px 0px black;
         border-radius: 4px;
     }
 
     nav {
-        display: flex;
+        display: block;
         justify-content: center;
         list-style: none;
         margin: 0;
@@ -19,12 +19,13 @@ header {
             justify-content: space-around;
             align-items: center;
             left: 50%;
-            padding: 1px;
+            padding: 15px;
             border-radius: 40px;
+            
         }
 
         .search-text {
-            color: black;
+            color: nth($colores, 1);
             font-size: 20px;
             float: left;
             line-height: 40px;
@@ -34,16 +35,16 @@ header {
             list-style: none;
             display: flex;
             justify-content: space-around;
-            background-color: silver;
+            background-color: nth($background-color, 2);
             li a {
                 display: block;
                 padding: 15px 20px;
-                color: black;
+                color: nth($colores, 1);
                 text-decoration: none;
             }
             li {
                 &:hover {
-                    background-color: firebrick;
+                background-color: nth($background-color, 8);
                 }
             }
             .menu-vertical {
@@ -51,15 +52,15 @@ header {
                 display: none;
                 list-style: none;
                 width: 300px;
-                background-color: black;
+                background-color: nth($background-color, 1);
                 
                 li{
                     &:hover {
-                    background-color: indigo;
+                    background-color: nth($background-color, 4);
                     }
                     a {
                     display: block;
-                    color: white;
+                    color: nth($colores, 5);
                     padding: 15px 15px 15px 20px;
                     }
                 }
@@ -67,7 +68,7 @@ header {
         }
     }
     .intro {
-        background-color: silver;
+        background-color: nth($background-color, 2);
         text-align: center;
         font-style: oblique;
         
