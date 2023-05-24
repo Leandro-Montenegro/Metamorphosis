@@ -15,9 +15,7 @@ header {
         padding: 0;
 
         .search {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flex(flex,space-around, center);
             left: 50%;
             padding: 15px;
             border-radius: 40px;
@@ -33,8 +31,7 @@ header {
 
         .menu-horizontal {
             list-style: none;
-            display: flex;
-            justify-content: space-around;
+            @include flex(flex,space-around, center);
             background-color: nth($background-color, 2);
             li a {
                 display: block;

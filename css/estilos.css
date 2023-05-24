@@ -70,7 +70,8 @@ main section h3 {
   font-size: 22px;
   margin-top: 25px;
   margin-bottom: 25px;
-  background-color: firebrick; }
+  background-color: firebrick;
+  width: 100%; }
 
 main .grid-container {
   display: grid;
@@ -110,11 +111,18 @@ main .grid-container {
 main .form {
   background-color: silver;
   color: black;
-  box-shadow: 7px 13px 37px black; }
+  box-shadow: 7px 13px 37px black;
+  font-size: 15px;
+  width: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
   main .form p {
     height: 40px;
     text-align: center;
-    font-size: 18;
+    font-size: 18 px;
     line-height: 40px; }
     main .form p a:hover {
       color: white;
@@ -156,8 +164,9 @@ footer {
   footer .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    font-size: 10px; }
+    font-size: 15px; }
   footer .footer-column {
     flex: 1 1 300px;
     margin-bottom: 20px; }
@@ -208,6 +217,7 @@ header nav {
     list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: silver; }
     header nav .menu-horizontal li a {
       display: block;

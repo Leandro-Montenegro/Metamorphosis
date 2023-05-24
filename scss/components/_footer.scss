@@ -4,10 +4,9 @@ footer {
     color: #555;
 
     .footer-container {
-        display: flex;
-        justify-content: space-between;
+        @include flex(flex,space-between, center);
         flex-wrap: wrap;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .footer-column {

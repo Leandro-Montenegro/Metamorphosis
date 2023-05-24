@@ -17,6 +17,7 @@ main {
         margin-top: 25px;
         margin-bottom: 25px;
         background-color: $color-h3;
+        width: 100%;
         }
     }
 
@@ -74,12 +75,19 @@ main {
         background-color: silver;
         color: black;
         box-shadow: 7px 13px 37px black;
+        font-size: 15px;
+        width: 50%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
         
 
         p {
             height: 40px;
             text-align: center;
-            font-size: 18;
+            font-size: 18 px;
             line-height: 40px;
 
             a:hover {
