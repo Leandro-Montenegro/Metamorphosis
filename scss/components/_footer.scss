@@ -2,6 +2,10 @@ footer {
     background-color: #f9f9f9;
     padding: 20px;
     color: #555;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: goldenrod;
+    }
 
     .footer-container {
         @include flex(flex,space-between, center);

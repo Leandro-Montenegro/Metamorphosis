@@ -160,7 +160,10 @@ main .button {
 footer {
   background-color: #f9f9f9;
   padding: 20px;
-  color: #555; }
+  color: #555;
+  transition: background-color 0.3s ease; }
+  footer:hover {
+    background-color: goldenrod; }
   footer .footer-container {
     display: flex;
     justify-content: space-between;
