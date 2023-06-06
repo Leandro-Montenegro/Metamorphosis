@@ -1,9 +1,10 @@
 main {
+    font-size: 10px;
     p {
         background-color: nth($background-color, 2);
     }
     h2 {
-        font-size: 50px;
+        font-size: 20px;
         color: black;
         margin-top: 10%;
         font-style: oblique;
@@ -25,15 +26,14 @@ main {
             display: grid;
             width: 100%;
             margin: 0%;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr ;
             box-shadow: -1px 1px 7px 0px black;
-            font-size: 10px;
+            font-size: 8px;
             grid-template-areas:
-                "header header"
-                "nav nav"
-                "main main"
-                "footer footer";
+                "header"
+                "nav"
+                "main "
+                "footer ";
 
                 .products {
                     box-shadow: -1px 1px 7px 0px black;
@@ -44,7 +44,7 @@ main {
         
                 .info-product {
                     display: inline-block;
-                    width: 50%;
+                    width: 40%;
                     margin-bottom: 10%;
                     border-radius: 5px;
                     color: black;
@@ -52,12 +52,19 @@ main {
         
                 .title-product {
                     background-color: aliceblue;
+                    width: 80%;
                     border-radius: 5px;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
                 }
         
                 .price-product {
+                    display: inline-block;
                     background-color: goldenrod;
-                    width: 100%;
+                    width: 40%;
                     border-radius: 5px;
                     padding: 10px;
                     text-decoration: none;
@@ -65,8 +72,8 @@ main {
         
                 .image-product {
                     border-radius: 30px;
-                    width: 300px;
-                    height: 400px;
+                    width: 200px;
+                    height: 300px;
                     margin-bottom: 0px;
                 }
             }
@@ -75,13 +82,15 @@ main {
         background-color: silver;
         color: black;
         box-shadow: 7px 13px 37px black;
-        font-size: 15px;
-        width: 50%;
+        font-size: 12px;
+        width: 450px;
+        height: 400px;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         margin: auto;
+        margin-bottom: 30px;
         
 
         p {

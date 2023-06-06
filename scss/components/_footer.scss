@@ -1,4 +1,5 @@
 footer {
+    font-size: 8px;
     background-color: #f9f9f9;
     padding: 20px;
     color: #555;
@@ -10,7 +11,7 @@ footer {
     .footer-container {
         @include flex(flex,space-between, center);
         flex-wrap: wrap;
-        font-size: 15px;
+        font-size: 8px;
     }
 
     .footer-column {
@@ -18,7 +19,7 @@ footer {
         margin-bottom: 20px;
 
         h4 {
-            font-size: 18px;
+            font-size: 8px;
             margin-bottom: 10px;
         }
 
@@ -30,6 +31,10 @@ footer {
             list-style: none;
             padding: 0;
             margin: 0;
+            .imagen{
+                width: 50px;
+                height: 50px;
+            }
 
             li {
                 margin-bottom: 5px;
