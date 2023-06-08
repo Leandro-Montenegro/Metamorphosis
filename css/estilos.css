@@ -106,7 +106,6 @@ main {
     color: black;
     box-shadow: 7px 13px 37px black;
     font-size: 12px;
-    width: 450px;
     height: 400px;
     left: 0;
     right: 0;
@@ -230,7 +229,6 @@ header {
         position: absolute;
         display: none;
         list-style: none;
-        width: 300px;
         background-color: black; }
         header nav .menu-horizontal .menu-vertical li:hover {
           background-color: indigo; }
