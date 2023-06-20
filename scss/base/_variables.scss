@@ -1,27 +1,26 @@
 //*Variables
-$color-h2: goldenrod;
-$color-h3: firebrick;
+$color-h2: #d26492;
+$color-h3: #EF476F;
 
 //*Lista
 $colores:
-black, //*1
-silver, //*2
-goldenrod, //*3
-indigo, //*4
-white, //*5
-aliceblue, //*6
-red, //*7
-firebrick; //*8
+black, //
+silver, //
+indigo, //
+white, //
+aliceblue, //
+red, //
+#A44D75; //
 
 $background-color:
 black, //*1
-silver, //*2
-goldenrod, //*3
+white, //*2
+#8B4E76, //*3
 indigo, //*4
-white, //*5
+#EF476F, //*5
 aliceblue, //*6
 red, //*7
-firebrick; //*8
+#A44D75; //*8
 
 
 @mixin flex($flex, $justify-content, $align-items) {

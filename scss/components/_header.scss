@@ -33,7 +33,7 @@ header {
         .menu-horizontal {
             list-style: none;
             @include flex(flex,space-around, center);
-            background-color: nth($background-color, 2);
+            background-color: #C6BBD6;
             li a {
                 display: block;
                 padding: 15px 20px;

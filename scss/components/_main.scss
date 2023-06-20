@@ -3,12 +3,25 @@ main {
     p {
         background-color: nth($background-color, 2);
     }
+    .hero {
+        height: 250px;
+        font-size: 10px;
+        width: 50%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .hero_image{
+        width: 40px;
+    }
     h2 {
         font-size: 20px;
         color: black;
         margin-top: 10%;
         font-style: oblique;
-        background-color: $color-h2;
+        background-color: $color-h3;
         width: 100%;
     }
     section{
@@ -23,17 +36,15 @@ main {
     }
 
     .grid-container {
-            display: grid;
-            width: 100%;
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
             margin: 0%;
-            grid-template-columns: 1fr ;
+            .products{
+            flex: 25%;
+            padding: 5px;
             box-shadow: -1px 1px 7px 0px black;
-            font-size: 8px;
-            grid-template-areas:
-                "header"
-                "nav"
-                "main "
-                "footer ";
+            font-size: 8px;}
 
                 .products {
                     box-shadow: -1px 1px 7px 0px black;
@@ -63,7 +74,7 @@ main {
         
                 .price-product {
                     display: inline-block;
-                    background-color: goldenrod;
+                    background-color: #ca267b;
                     width: 40%;
                     border-radius: 5px;
                     padding: 10px;
@@ -79,7 +90,7 @@ main {
             }
 
     .form {
-        background-color: silver;
+        background-color: #C6BBD6;
         color: black;
         box-shadow: 7px 13px 37px black;
         font-size: 12px;
@@ -99,7 +110,7 @@ main {
             line-height: 40px;
 
             a:hover {
-                color: white;
+                color: black;
                 text-decoration: underline;
             }
 
@@ -125,6 +136,7 @@ main {
 
     h4 {
         color: black;
+        font-size: 12px;
     }
 
     h5 {
@@ -137,7 +149,7 @@ main {
         border-radius: 5px;
         text-decoration: none;
         &:hover {
-            background-color: red;
+            background-color: #EF476F;
             color: white;
         }
     }
