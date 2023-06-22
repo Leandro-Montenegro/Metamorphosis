@@ -1,20 +1,30 @@
 main {
     font-size: 10px;
     p {
-        background-color: nth($background-color, 2);
+        background-color: nth($background-color, 8);
     }
     .hero {
-        height: 250px;
-        font-size: 10px;
-        width: 50%;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
+        .subtitulo{
+            font-size: 20px;
+        }
+        font-size: 11px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: nth($background-color, 8);
+        width: 350px;
+        height: 300px;
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        background-clip: border-box;
         margin: auto;
+        gap: 30px;
+        border-radius: 50px;
+        text-align: center;
+
     }
     .hero_image{
         width: 40px;
+        
     }
     h2 {
         font-size: 20px;
