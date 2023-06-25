@@ -4,14 +4,10 @@ main {
         background-color: nth($background-color, 8);
     }
     .hero {
-        .subtitulo{
-            font-size: 20px;
-        }
-        font-size: 11px;
+        font-size: 17px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         background-color: nth($background-color, 8);
-        width: 350px;
-        height: 300px;
+        width: 90%;
         background-size: cover;
         background-position: top;
         background-attachment: fixed;
